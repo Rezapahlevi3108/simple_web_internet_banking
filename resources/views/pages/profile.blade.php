@@ -3,7 +3,10 @@
 @section('content')
 
     <div class="card bg-white shadow border-0 mx-auto w-50 my-5">
-        <a href="{{ route('home') }}" class="text-decoration-none text-black m-3">< Back</a>
+        <a href="{{ route('home') }}" class="font-weight-500 color-primary-1 m-3">
+            <i class="fa-solid fa-arrow-left me-1" style="color: #5e99a8;"></i>
+            Back
+        </a>
         <div class="p-5 pt-4">
             @if(session('success'))
                 <p class="alert alert-success">{{ session('success') }}</p>
@@ -12,7 +15,7 @@
                 @csrf
                 <div class="d-flex align-items-center">
                     <img src="{{ $user->userDetail->profile_photo ? asset('profile/' . $user->userDetail->profile_photo) : asset('img/profile.svg') }}" id="preview" class="rounded" height="100px" width="100px" alt="photo_profil" style="object-fit: cover">
-                    <button type="button" class="btn btn-primary m-3" onclick="document.getElementById('file').click()">Pilih</button>
+                    <x-button type="button" class="ms-3 py-2 px-3" onclick="document.getElementById('file').click()">Pilih Foto</x-button>
                     <input type="file" name="file" id="file" class="d-none">
                 </div>
                 <div class="mt-5">
@@ -33,7 +36,7 @@
                         <textarea class="form-control" name="address" rows="3">{{ $user->userDetail->address }}</textarea>
                     </div>
                     <div class="form-group mb-3">
-                        <button type="submit" class="btn btn-primary">Simpan</button>
+                        <x-button type="submit" class="py-2 px-3">Simpan</x-button>
                     </div>
                 </div>
             </form>

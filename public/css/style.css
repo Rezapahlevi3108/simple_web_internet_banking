@@ -1,0 +1,39 @@
+* a {
+    text-decoration: none;
+}
+
+.color-primary-1 {
+    color: #5e99a8;
+}
+
+.bg-primary-1 {
+    background-color: #5e99a8;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
+.margin-x {
+    margin: 0 100px;
+}
+
+.margin-top-170 {
+    margin-top: 170px;
+}
+
+.margin-top-150 {
+    margin-top: 150px;
+}
+
+.margin-top-80 {
+    margin-top: 80px;
+}
+
+.button:hover {
+    background-color: #528aa4;
+}

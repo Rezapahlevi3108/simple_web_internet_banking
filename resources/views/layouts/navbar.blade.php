@@ -18,8 +18,8 @@
                         </ul>
                     </div>
                 @else
-                    <a class="btn btn-primary me-2" href="{{ route('login') }}">Login</a>
-                    <a class="btn btn-primary" href="{{ route('register') }}">Register</a>
+                    <x-button onclick="location.href = '{{ route('login') }}'" class="me-2 py-2 px-3">Login</x-button>
+                    <x-button onclick="location.href = '{{ route('register') }}'" class="py-2 px-3">Register</x-button>
                 @endif
             </div>
         </div>
